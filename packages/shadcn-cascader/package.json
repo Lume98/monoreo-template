@@ -1,6 +1,6 @@
 {
   "name": "@lume-ui/shadcn-cascader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A cascader component built with shadcn/ui and Radix UI",
   "keywords": [
     "react",

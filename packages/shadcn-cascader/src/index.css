@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@import "tailwindcss" prefix(lucascader);
+ 
 @import "tw-animate-css";
 
 @theme inline {

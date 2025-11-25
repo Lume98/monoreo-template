@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 import * as PopoverPrimitive from "@radix-ui/react-popover"
 
@@ -28,7 +30,7 @@ function PopoverContent({
         align={align}
         sideOffset={sideOffset}
         className={cn(
-          "bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 w-72 origin-(--radix-popover-content-transform-origin) rounded-md border p-4 shadow-md outline-hidden",
+          "lucascader:bg-popover lucascader:text-popover-foreground lucascader:data-[state=open]:animate-in lucascader:data-[state=closed]:animate-out lucascader:data-[state=closed]:fade-out-0 lucascader:data-[state=open]:fade-in-0 lucascader:data-[state=closed]:zoom-out-95 lucascader:data-[state=open]:zoom-in-95 lucascader:data-[side=bottom]:slide-in-from-top-2 lucascader:data-[side=left]:slide-in-from-right-2 lucascader:data-[side=right]:slide-in-from-left-2 lucascader:data-[side=top]:slide-in-from-bottom-2 lucascader:z-50 lucascader:w-72 lucascader:origin-(--radix-popover-content-transform-origin) lucascader:rounded-md lucascader:border lucascader:p-4 lucascader:shadow-md lucascader:outline-hidden",
           className
         )}
         {...props}

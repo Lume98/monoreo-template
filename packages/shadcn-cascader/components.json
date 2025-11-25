@@ -4,8 +4,9 @@
   "rsc": false,
   "tsx": true,
   "tailwind": {
+    "prefix": "lucascader",
     "config": "",
-    "css": "src/styles.css",
+    "css": "src/index.css",
     "baseColor": "neutral",
     "cssVariables": true
   },

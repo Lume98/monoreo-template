@@ -5,18 +5,18 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const badgeVariants = cva(
-  "inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden",
+  "lucascader:inline-flex lucascader:items-center lucascader:justify-center lucascader:rounded-full lucascader:border lucascader:px-2 lucascader:py-0.5 lucascader:text-xs lucascader:font-medium lucascader:w-fit lucascader:whitespace-nowrap lucascader:shrink-0 lucascader:[&>svg]:size-3 lucascader:gap-1 lucascader:[&>svg]:pointer-events-none lucascader:focus-visible:border-ring lucascader:focus-visible:ring-ring/50 lucascader:focus-visible:ring-[3px] lucascader:aria-invalid:ring-destructive/20 lucascader:dark:aria-invalid:ring-destructive/40 lucascader:aria-invalid:border-destructive lucascader:transition-[color,box-shadow] lucascader:overflow-hidden",
   {
     variants: {
       variant: {
         default:
-          "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
+          "lucascader:border-transparent lucascader:bg-primary lucascader:text-primary-foreground lucascader:[a&]:hover:bg-primary/90",
         secondary:
-          "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
+          "lucascader:border-transparent lucascader:bg-secondary lucascader:text-secondary-foreground lucascader:[a&]:hover:bg-secondary/90",
         destructive:
-          "border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+          "lucascader:border-transparent lucascader:bg-destructive lucascader:text-white lucascader:[a&]:hover:bg-destructive/90 lucascader:focus-visible:ring-destructive/20 lucascader:dark:focus-visible:ring-destructive/40 lucascader:dark:bg-destructive/60",
         outline:
-          "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
+          "lucascader:text-foreground lucascader:[a&]:hover:bg-accent lucascader:[a&]:hover:text-accent-foreground",
       },
     },
     defaultVariants: {

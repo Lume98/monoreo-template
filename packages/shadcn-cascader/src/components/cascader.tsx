@@ -240,24 +240,24 @@ export function Cascader({
           aria-expanded={open}
           disabled={disabled}
           className={cn(
-            'w-[300px] justify-between border-gray-200',
-            multiple && 'h-auto min-h-10 py-2',
+            'lucascader:w-[300px] lucascader:justify-between lucascader:border-gray-200',
+            multiple && 'lucascader:h-auto lucascader:min-h-10 lucascader:py-2',
             className
           )}
         >
           {multiple ? (
-            <div className="flex flex-wrap gap-1 flex-1">
+            <div className="lucascader:flex lucascader:flex-wrap lucascader:gap-1 lucascader:flex-1">
               {pathLabels.length === 0 ? (
-                <span className="text-muted-foreground">{placeholder}</span>
+                <span className="lucascader:text-muted-foreground">{placeholder}</span>
               ) : (
                 <>
                   {displayTags.visible.map((item, index) => (
                     <Badge
                       key={index}
                       variant="secondary"
-                      className="gap-1 pr-1"
+                      className="lucascader:gap-1 lucascader:pr-1"
                     >
-                      <span className="max-w-[200px] truncate">
+                      <span className="lucascader:max-w-[200px] lucascader:truncate">
                         {item.label}
                       </span>
                       <div
@@ -266,12 +266,12 @@ export function Cascader({
                           handleRemoveTagClick(e, item.pathValues);
                         }}
                       >
-                        <X className="h-3 w-3 cursor-pointer hover:text-destructive" />
+                        <X className="lucascader:h-3 lucascader:w-3 lucascader:cursor-pointer lucascader:hover:lucascader:text-destructive" />
                       </div>
                     </Badge>
                   ))}
                   {displayTags.omittedCount > 0 && (
-                    <Badge variant="secondary" className="cursor-default">
+                    <Badge variant="secondary" className="lucascader:cursor-default">
                       {maxTagPlaceholder
                         ? maxTagPlaceholder(displayTags.omittedCount)
                         : `+${displayTags.omittedCount}`}
@@ -281,32 +281,32 @@ export function Cascader({
               )}
             </div>
           ) : (
-            <span className="truncate">{displayText}</span>
+            <span className="lucascader:truncate">{displayText}</span>
           )}
           {open ? (
-            <ChevronsDownUp className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            <ChevronsDownUp className="lucascader:ml-2 lucascader:h-4 lucascader:w-4 lucascader:shrink-0 lucascader:opacity-50" />
           ) : (
-            <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            <ChevronsUpDown className="lucascader:ml-2 lucascader:h-4 lucascader:w-4 lucascader:shrink-0 lucascader:opacity-50" />
           )}
         </Button>
       </PopoverTrigger>
 
-      <PopoverContent className="w-auto p-0 border-gray-200" align="start">
+      <PopoverContent className="lucascader:w-auto lucascader:p-0 lucascader:border-gray-200" align="start">
         {options.length === 0 ? (
-          <div className="p-4 text-center min-w-[180px] text-sm text-muted-foreground">
+          <div className="lucascader:p-4 lucascader:text-center lucascader:min-w-[180px] lucascader:text-sm lucascader:text-muted-foreground">
             暂无数据
           </div>
         ) : (
-          <div className="flex">
+          <div className="lucascader:flex">
             {panels.map((panel, panelIndex) => (
               <div
                 key={panelIndex}
-                className="border-r border-gray-200 last:border-r-0 min-w-[180px] shrink-0 h-[240px]"
+                className="lucascader:border-r lucascader:border-gray-200 lucascader:last:lucascader:border-r-0 lucascader:min-w-[180px] lucascader:shrink-0 lucascader:h-[240px]"
               >
-                <ScrollArea className="h-full">
-                  <div className="p-1">
+                <ScrollArea className="lucascader:h-full">
+                  <div className="lucascader:p-1">
                     {panel.length === 0 ? (
-                      <div className="p-4 text-center text-xs text-muted-foreground">
+                      <div className="lucascader:p-4 lucascader:text-center lucascader:text-xs lucascader:text-muted-foreground">
                         无选项
                       </div>
                     ) : (
@@ -338,10 +338,10 @@ export function Cascader({
                               handleMouseEnter(option, panelIndex)
                             }
                             className={cn(
-                              'relative flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none transition-colors',
-                              isSelected && 'bg-accent text-accent-foreground',
+                              'lucascader:relative lucascader:flex lucascader:cursor-pointer lucascader:select-none lucascader:items-center lucascader:gap-2 lucascader:rounded-sm lucascader:px-2 lucascader:py-1.5 lucascader:text-sm lucascader:outline-none lucascader:transition-colors',
+                              isSelected && 'lucascader:bg-accent lucascader:text-accent-foreground',
                               option.disabled &&
-                                'pointer-events-none opacity-50'
+                                'lucascader:pointer-events-none lucascader:opacity-50'
                             )}
                           >
                             {multiple && (
@@ -353,19 +353,19 @@ export function Cascader({
                                   handleSelect(option, panelIndex)
                                 }
                                 onClick={e => e.stopPropagation()}
-                                className="pointer-events-none"
+                                className="lucascader:pointer-events-none"
                               />
                             )}
-                            <span className="flex-1 truncate">
+                            <span className="lucascader:flex-1 lucascader:truncate">
                               {option.label}
                             </span>
                             {!multiple &&
                               isFinalSelected &&
                               (checkStrictly || !hasChildren) && (
-                                <Check className="h-4 w-4 shrink-0" />
+                                <Check className="lucascader:h-4 lucascader:w-4 lucascader:shrink-0" />
                               )}
                             {hasChildren && (
-                              <ChevronRight className="h-4 w-4 shrink-0 opacity-50" />
+                              <ChevronRight className="lucascader:h-4 lucascader:w-4 lucascader:shrink-0 lucascader:opacity-50" />
                             )}
                           </div>
                         );

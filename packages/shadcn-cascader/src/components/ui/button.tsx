@@ -5,28 +5,28 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "lucascader:inline-flex lucascader:items-center lucascader:justify-center lucascader:gap-2 lucascader:whitespace-nowrap lucascader:rounded-md lucascader:text-sm lucascader:font-medium lucascader:transition-all lucascader:disabled:pointer-events-none lucascader:disabled:opacity-50 lucascader:[&_svg]:pointer-events-none lucascader:[&_svg:not([class*=size-])]:size-4 lucascader:shrink-0 lucascader:[&_svg]:shrink-0 lucascader:outline-none lucascader:focus-visible:border-ring lucascader:focus-visible:ring-ring/50 lucascader:focus-visible:ring-[3px] lucascader:aria-invalid:ring-destructive/20 lucascader:dark:aria-invalid:ring-destructive/40 lucascader:aria-invalid:border-destructive",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "lucascader:bg-primary lucascader:text-primary-foreground lucascader:hover:bg-primary/90",
         destructive:
-          "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+          "lucascader:bg-destructive lucascader:text-white lucascader:hover:bg-destructive/90 lucascader:focus-visible:ring-destructive/20 lucascader:dark:focus-visible:ring-destructive/40 lucascader:dark:bg-destructive/60",
         outline:
-          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+          "lucascader:border lucascader:bg-background lucascader:shadow-xs lucascader:hover:bg-accent lucascader:hover:text-accent-foreground lucascader:dark:bg-input/30 lucascader:dark:border-input lucascader:dark:hover:bg-input/50",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "lucascader:bg-secondary lucascader:text-secondary-foreground lucascader:hover:bg-secondary/80",
         ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+          "lucascader:hover:bg-accent lucascader:hover:text-accent-foreground lucascader:dark:hover:bg-accent/50",
+        link: "lucascader:text-primary lucascader:underline-offset-4 lucascader:hover:underline",
       },
       size: {
-        default: "h-9 px-4 py-2 has-[>svg]:px-3",
-        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
-        icon: "size-9",
-        "icon-sm": "size-8",
-        "icon-lg": "size-10",
+        default: "lucascader:h-9 lucascader:px-4 lucascader:py-2 lucascader:has-[>svg]:px-3",
+        sm: "lucascader:h-8 lucascader:rounded-md lucascader:gap-1.5 lucascader:px-3 lucascader:has-[>svg]:px-2.5",
+        lg: "lucascader:h-10 lucascader:rounded-md lucascader:px-6 lucascader:has-[>svg]:px-4",
+        icon: "lucascader:size-9",
+        "icon-sm": "lucascader:size-8",
+        "icon-lg": "lucascader:size-10",
       },
     },
     defaultVariants: {
