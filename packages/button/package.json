@@ -1,5 +1,5 @@
 {
-  "name": "@lume-ui/shadcn-button",
+  "name": "@lume-ui/button",
   "version": "0.0.3",
   "description": "A button component built with shadcn/ui and Radix UI",
   "keywords": [
