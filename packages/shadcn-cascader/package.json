@@ -1,8 +1,15 @@
 {
   "name": "@lume-ui/shadcn-cascader",
   "version": "0.0.1",
-  "description": "lume-ui",
-  "keywords": [],
+  "description": "A cascader component built with shadcn/ui and Radix UI",
+  "keywords": [
+    "react",
+    "cascader",
+    "shadcn",
+    "radix-ui",
+    "component",
+    "ui"
+  ],
   "author": "",
   "license": "Apache-2.0",
   "packageManager": "pnpm@10.13.1",
