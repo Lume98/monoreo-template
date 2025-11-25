@@ -1,0 +1,27 @@
+{
+  "name": "mono-repo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm --filter storybook dev",
+    "prettier": "pnpm -r prettier",
+    "prettier:check": "pnpm -r prettier:check",
+    "test:all": "pnpm -r test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache 2.0",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.3.0",
+    "prettier": "^3.6.2"
+  }
+}

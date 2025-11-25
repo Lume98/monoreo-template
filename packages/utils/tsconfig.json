@@ -1,0 +1,19 @@
+{
+  // Utils 包的 TypeScript 配置
+  // 继承根配置，并添加包特定的配置
+
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    // Utils 包不需要 DOM 类型，只需要 ES 库
+    "lib": ["ES2022"],
+
+    // 包特定的类型声明
+    "types": ["vitest/globals"],
+
+    // 覆盖根配置中的声明文件相关选项（utils 包可能需要生成声明文件）
+    // 如果需要生成声明文件，保持默认值；如果不需要，设置为 false
+    "composite": true,
+    "incremental": true
+  },
+  "include": ["src"]
+}
