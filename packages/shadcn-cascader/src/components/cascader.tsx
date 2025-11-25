@@ -240,7 +240,7 @@ export function Cascader({
           aria-expanded={open}
           disabled={disabled}
           className={cn(
-            'w-[300px] justify-between',
+            'w-[300px] justify-between border-gray-200',
             multiple && 'h-auto min-h-10 py-2',
             className
           )}
@@ -291,7 +291,7 @@ export function Cascader({
         </Button>
       </PopoverTrigger>
 
-      <PopoverContent className="w-auto p-0" align="start">
+      <PopoverContent className="w-auto p-0 border-gray-200" align="start">
         {options.length === 0 ? (
           <div className="p-4 text-center min-w-[180px] text-sm text-muted-foreground">
             暂无数据
@@ -301,9 +301,9 @@ export function Cascader({
             {panels.map((panel, panelIndex) => (
               <div
                 key={panelIndex}
-                className="border-r last:border-r-0 min-w-[180px]"
+                className="border-r border-gray-200 last:border-r-0 min-w-[180px] shrink-0 h-[240px]"
               >
-                <ScrollArea className="h-[280px]">
+                <ScrollArea className="h-full">
                   <div className="p-1">
                     {panel.length === 0 ? (
                       <div className="p-4 text-center text-xs text-muted-foreground">

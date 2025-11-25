@@ -35,6 +35,30 @@ const basicOptions: CascaderOption[] = [
           { label: "江北区", value: "jiangbei" },
         ],
       },
+      {
+        label: "温州市",
+        value: "wenzhou",
+        children: [
+          { label: "瓯海区", value: "ouhai" },
+          { label: "龙湾区", value: "longwan" },
+        ],
+      },
+      {
+        label: "嘉兴市",
+        value: "jiaxing",
+        children: [
+          { label: "南湖区", value: "nanhu" },
+          { label: "秀洲区", value: "xiuzhou" },
+        ],
+      },
+      {
+        label: "湖州市",
+        value: "huzhou",
+        children: [
+          { label: "吴兴区", value: "wenzu" },
+          { label: "南浔区", value: "nanxun" },
+        ],
+      },
     ],
   },
   {
