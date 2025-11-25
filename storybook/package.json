@@ -19,7 +19,7 @@
     "storybook": "^10.0.8"
   },
   "dependencies": {
-    "@lume-ui/shadcn-button": "workspace:*",
-    "@lume-ui/shadcn-cascader": "workspace:*"
+    "@lume-ui/button": "workspace:*",
+    "@lume-ui/cascader": "workspace:*"
   }
 }
