@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button } from "@lume-ui/button";
-import "@lume-ui/button/index.css";
+import "@lume-ui/button/index.css"
+
 const meta = {
-  title: "Components/Button",
+  title: "Button",
   component: Button,
   parameters: {
     layout: "centered",
@@ -16,6 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
   args: {
-    label: "Button",
+    variant: "destructive",
   },
 };

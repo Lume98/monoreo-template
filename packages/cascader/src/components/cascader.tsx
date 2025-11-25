@@ -6,17 +6,15 @@ import {
   X,
   ChevronsDownUp,
 } from 'lucide-react';
-
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
 import {
-  Popover,
+  Button, Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Badge } from '@/components/ui/badge';
+  ScrollArea,
+  Checkbox,
+  Badge
+} from '@lume-ui/shadcn-ui';
 import { generatePanels } from '@/lib/panels';
 import { getDisplayText } from '@/lib/get-display-text';
 import { getPathLabels } from '@/lib/get-path-labels';
@@ -320,8 +318,8 @@ export function Cascader({
                         const isFinalSelected = multiple
                           ? state.values.has(option.value)
                           : checkStrictly
-                          ? state.path[panelIndex]?.value === option.value
-                          : state.path[panelIndex]?.value === option.value &&
+                            ? state.path[panelIndex]?.value === option.value
+                            : state.path[panelIndex]?.value === option.value &&
                             panelIndex === state.path.length - 1;
 
                         // 计算选中状态（用于父子关联模式）
@@ -341,7 +339,7 @@ export function Cascader({
                               'lucascader:relative lucascader:flex lucascader:cursor-pointer lucascader:select-none lucascader:items-center lucascader:gap-2 lucascader:rounded-sm lucascader:px-2 lucascader:py-1.5 lucascader:text-sm lucascader:outline-none lucascader:transition-colors',
                               isSelected && 'lucascader:bg-accent lucascader:text-accent-foreground',
                               option.disabled &&
-                                'lucascader:pointer-events-none lucascader:opacity-50'
+                              'lucascader:pointer-events-none lucascader:opacity-50'
                             )}
                           >
                             {multiple && (

@@ -1,6 +1,7 @@
 import { themes } from "storybook/theming";
-
+import "@lume-ui/shadcn-ui/index.css"
 export const parameters = {
+
   controls: {
     expanded: true,
   },

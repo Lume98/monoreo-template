@@ -1,6 +1,7 @@
 {
-  "name": "@lume-ui/button",
+  "name": "@lume-ui/shadcn-ui",
   "version": "0.0.3",
+  "private": true,
   "description": "A button component built with shadcn/ui and Radix UI",
   "keywords": [
     "react",
@@ -29,9 +30,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "barrel": "barrelsby",
-    "dev": "tsup --watch"
+    "barrelsby": "barrelsby --config barrelsby.config.json",
+    "build": "pnpm barrelsby && tsup",
+    "dev": "pnpm barrelsby && tsup --watch"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

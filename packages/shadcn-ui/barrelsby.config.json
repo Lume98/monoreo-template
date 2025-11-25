@@ -1,0 +1,6 @@
+{
+  "directory": "src/components",
+  "location": "top",
+  "delete": true,
+  "verbose": true
+}
