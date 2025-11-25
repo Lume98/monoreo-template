@@ -1,2 +1,3 @@
 import "./index.css";
-export * from "./components/Cascader";
+export { Cascader } from "./components/cascader";
+export type { CascaderProps, CascaderOption } from "./components/cascader";

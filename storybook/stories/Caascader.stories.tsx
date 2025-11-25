@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { Cascader, CascaderOption } from "@lume-ui/shadcn-cascader";
+import { Cascader, CascaderOption } from "@lume-ui/cascader";
 import "@lume-ui/shadcn-cascader/index.css";
 
 const meta = {

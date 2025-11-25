@@ -30,36 +30,6 @@ importers:
         specifier: ^3.6.2
         version: 3.6.2
 
-  packages/cascader:
-    devDependencies:
-      '@tailwindcss/postcss':
-        specifier: ^4.1.17
-        version: 4.1.17
-      '@types/react':
-        specifier: ^19.2.7
-        version: 19.2.7
-      '@types/react-dom':
-        specifier: ^19.2.3
-        version: 19.2.3(@types/react@19.2.7)
-      postcss:
-        specifier: ^8.5.6
-        version: 8.5.6
-      react:
-        specifier: ^19.2.0
-        version: 19.2.0
-      react-dom:
-        specifier: ^19.2.0
-        version: 19.2.0(react@19.2.0)
-      tailwindcss:
-        specifier: ^4.1.17
-        version: 4.1.17
-      tsup:
-        specifier: ^8.5.1
-        version: 8.5.1(@microsoft/api-extractor@7.55.1(@types/node@24.10.1))(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
-      typescript:
-        specifier: ~5.9.3
-        version: 5.9.3
-
   packages/shadcn-button:
     dependencies:
       '@radix-ui/react-checkbox':
@@ -232,9 +202,6 @@ importers:
 
   storybook:
     dependencies:
-      '@lume-ui/cascader':
-        specifier: workspace:*
-        version: link:../packages/cascader
       '@lume-ui/shadcn-button':
         specifier: workspace:*
         version: link:../packages/theme
