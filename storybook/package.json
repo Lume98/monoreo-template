@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@lume-ui/cascader": "workspace:*",
-    "@lume-ui/button": "workspace:*",
+    "@lume-ui/shadcn-button": "workspace:*",
     "@lume-ui/shadcn-cascader": "workspace:*"
   }
 }
