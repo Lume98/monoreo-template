@@ -84,12 +84,6 @@ export function Cascader({
     value,
   });
 
-  React.useEffect(() => {
-    console.log('paths', state.paths);
-    console.log('values', state.values);
-    console.log('hoverPath', state.hoverPath);
-  }, [state]);
-
   // 单选时的显示文本
   const displayText = React.useMemo(() => {
     if (multiple) {
