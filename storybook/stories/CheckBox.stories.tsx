@@ -11,14 +11,19 @@ const meta = {
     checked: {
       control: {
         type: "inline-radio",
-        options: [true, false, "indeterminate"],
         labels: {
           true: "选中",
           false: "未选中",
           indeterminate: "半选",
         },
       },
+      options: [true, false, "indeterminate"],
       description: "复选框的选中状态",
+      table: {
+        type: {
+          summary: "boolean | 'indeterminate'",
+        },
+      },
     },
     disabled: {
       control: "boolean",
@@ -145,11 +150,7 @@ export const Interactive: Story = {
         />
         <span className="text-sm text-gray-600">
           当前状态:{" "}
-          {checked === true
-            ? "已选中"
-            : checked === false
-            ? "未选中"
-            : "半选"}
+          {checked === true ? "已选中" : checked === false ? "未选中" : "半选"}
         </span>
       </div>
     );
