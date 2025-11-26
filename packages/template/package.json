@@ -1,35 +1,59 @@
 {
-    "name": "@template/template",
-    "version": "1.0.0",
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "require": "./dist/index.js",
-            "import": "./dist/index.mjs"
-        },
-        "./style.css": "./dist/index.css"
+  "name": "@template/template",
+  "version": "1.0.0",
+  "description": "A React component library template built with Tailwind CSS and Radix UI",
+  "keywords": [
+    "react",
+    "components",
+    "tailwindcss",
+    "radix-ui",
+    "ui",
+    "template"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.13.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     },
-    "peerDependencies": {
-        "react": ">=18",
-        "react-dom": ">=18"
-    },
-    "scripts": {
-        "build": "tsup",
-        "dev": "tsup --watch"
-    },
-    "dependencies": {
-        "@radix-ui/react-slot": "^1.2.4",
-        "clsx": "^2.1.1",
-        "tailwind-merge": "^3.4.0"
-    },
-    "devDependencies": {
-        "@types/react": "^19.2.7",
-        "tailwindcss": "^4.1.17",
-        "tsup": "^8.0.0",
-        "typescript": "^5.0.0",
-        "postcss": "^8.5.6"
-    }
+    "./index.css": "./dist/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && postcss src/styles/global.css -o dist/index.css",
+    "build:css": "postcss src/styles/global.css -o dist/index.css",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.17",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3"
+  }
 }

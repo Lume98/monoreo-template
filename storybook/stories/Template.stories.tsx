@@ -1,5 +1,5 @@
 import { Button } from "@template/template";
-import "@template/template/style.css";
+import "@template/template/index.css";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
