@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button } from "@lume-ui/button";
-import "@lume-ui/button/index.css"
 
 const meta = {
   title: "Button",
