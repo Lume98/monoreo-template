@@ -21,6 +21,7 @@
   "dependencies": {
     "@lume-ui/cascader": "workspace:*",
     "@lume-ui/shadcn-ui": "workspace:*",
-    "@lume-ui/button": "workspace:*"
+    "@lume-ui/button": "workspace:*",
+    "@template/template": "workspace:*"
   }
 }
