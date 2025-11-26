@@ -6,10 +6,17 @@
   "scripts": {
     "test": "vitest run",
     "prettier": "prettier . --write --ignore-path ../../.prettierignore",
+    "build": "tsc",
+    "dev": "tsc --watch",
     "prettier:check": "prettier . --check --ignore-path ../../.prettierignore"
   },
   "devDependencies": {
     "typescript": "~5.9.3",
     "vitest": "^4.0.12"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.4.0",
+    "tsup": "^8.5.1"
   }
 }

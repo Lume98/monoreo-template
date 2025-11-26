@@ -1,3 +1,1 @@
-import { add } from "./calc.js";
-
-export { add };
+export { cn } from "./tailwindcss";

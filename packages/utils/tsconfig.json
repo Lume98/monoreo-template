@@ -1,19 +1,33 @@
 {
-  // Utils 包的 TypeScript 配置
-  // 继承根配置，并添加包特定的配置
-
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    // Utils 包不需要 DOM 类型，只需要 ES 库
-    "lib": ["ES2022"],
-
-    // 包特定的类型声明
-    "types": ["vitest/globals"],
-
-    // 覆盖根配置中的声明文件相关选项（utils 包可能需要生成声明文件）
-    // 如果需要生成声明文件，保持默认值；如果不需要，设置为 false
-    "composite": true,
-    "incremental": true
+    "target": "es2018",
+    "lib": [
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx", // 关键：React 17+ 新转换
+    "declaration": true, // 生成类型定义
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "outDir": "dist",
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
