@@ -25,6 +25,7 @@
     "@lume-ui/button": "workspace:*",
     "@lume-ui/cascader": "workspace:*",
     "@lume-ui/shadcn-ui": "workspace:*",
-    "@template/template": "workspace:*"
+    "@template/template": "workspace:*",
+    "@lume-ui/checkbox": "workspace:*"
   }
 }
